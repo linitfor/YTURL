@@ -5,7 +5,24 @@ set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "東森新聞,https://www.youtube.com/watch?v="$id > yturl
 
+set key = "華視新聞直播 CH52"
+set id = `yt-dlp "ytsearch:$key"  --get-id`
+echo $id
+echo "華視新聞,https://www.youtube.com/watch?v="$id > yturl
 
 
+set key = "LIVE 民視新聞"
+set id = `yt-dlp "ytsearch:$key"  --get-id`
+echo $id
+echo "民視新聞,https://www.youtube.com/watch?v="$id > yturl
 
 
+set key = "三立新聞直播"
+set id = `yt-dlp "ytsearch:$key"  --get-id`
+echo $id
+echo "三立新聞直播,https://www.youtube.com/watch?v="$id > yturl
+
+set key = "TVBS新聞直播"
+set id = `yt-dlp "ytsearch:$key"  --get-id`
+echo $id
+echo "TVBS新聞直播,https://www.youtube.com/watch?v="$id > yturl
