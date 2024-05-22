@@ -11,7 +11,7 @@ set key = "東森新聞 51 頻道 24 小時直播"
 echo $key
 set id = `yt-dlp "ytsearch:$key  --get-id`
 echo $id
-echo "$key,https://www.youtube.com/watch?v="$id >> yturl
+echo $key",https://www.youtube.com/watch?v="$id >> yturl
 
 #end
 
