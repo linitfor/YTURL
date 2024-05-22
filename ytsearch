@@ -8,7 +8,7 @@ set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "東森新聞,https://www.youtube.com/watch?v="$id >> yturl
 
-set key = "#LIVE: 華視新聞直播"
+set key = "#LIVE: 華視新聞直播 CH52 "
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "華視新聞,https://www.youtube.com/watch?v="$id >> yturl
