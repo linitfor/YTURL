@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set key = "東森新聞 51 頻道 24 小時直播""
+set key = "東森新聞 51 頻道 24 小時直播"
 
 set id = `yt-dlp "ytsearch:$key  --get-id`
 
