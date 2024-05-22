@@ -3,7 +3,7 @@
 #set key = "東森新聞 51 頻道 24 小時直播"
 
 
-foreach key (`cat ./channel`)
+foreach key (`"cat ./channel"`)
 
   set id = `yt-dlp "ytsearch:$key  --get-id`
 
