@@ -1,19 +1,11 @@
 #!/bin/csh -f
 
-rm -rf yturl
-
-#set a = (東森新聞 東森財經 寰宇新聞 TVBS新聞 中天新聞 台視新聞 中視新聞 華視新聞 亞洲新聞)
-
 set key = "東森新聞 51 頻道 24 小時直播"
-
-#foreach key ("`cat ./channel`")
-
-echo $key
-set id = `yt-dlp "ytsearch:$key  --get-id`
+set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
-echo "東森新聞,https://www.youtube.com/watch?v="$id >> yturl
+echo $key",https://www.youtube.com/watch?v="$id > yturl
 
-#end
+
 
 
 
