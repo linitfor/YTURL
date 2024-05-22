@@ -3,4 +3,4 @@
 set id = `yt-dlp "ytsearch:東森新聞 51 頻道 24 小時直播"  --get-id`
 
 echo $id
-echo "https://youtu.be/"$id > yturl
+echo "東森新聞,https://www.youtube.com/watch?v="$id > yturl
