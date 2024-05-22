@@ -2,8 +2,8 @@
 
 rm -rf yturl
 
-set a = (東森新聞 東森財經 寰宇新聞 TVBS新聞 中天新聞 台視新聞 中視新聞 華視新聞 亞洲新聞)
-foreach key(a)
+#set a = (東森新聞 東森財經 寰宇新聞 TVBS新聞 中天新聞 台視新聞 中視新聞 華視新聞 亞洲新聞)
+foreach key ("`cat ldpc_async_path`")
 
 set id = `yt-dlp "ytsearch:$key  --get-id`
 echo $id
