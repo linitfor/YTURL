@@ -20,7 +20,7 @@ echo $id
 echo "民視新聞,https://www.youtube.com/watch?v="$id >> yturl
 
 
-set key = "三立新聞直播"
+set key = "三立新聞 24小時直播"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "三立新聞直播,https://www.youtube.com/watch?v="$id >> yturl
@@ -29,3 +29,9 @@ set key = "TVBS新聞直播"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "TVBS新聞直播,https://www.youtube.com/watch?v="$id >> yturl
+
+
+set key = "東森財經新聞24小時"
+set id = `yt-dlp "ytsearch:$key"  --get-id`
+echo $id
+echo "東森財經,https://www.youtube.com/watch?v="$id >> yturl
