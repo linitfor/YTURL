@@ -3,12 +3,12 @@
 rm -rf yturl
 touch yturl
 
-set key = "東森新聞 51 頻道 24 小時直播"
+set key = "東森新聞 51"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "東森新聞,https://www.youtube.com/watch?v="$id >> yturl
 
-set key = "#LIVE: 華視新聞直播 CH52 "
+set key = "華視新聞直播 CH52"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "華視新聞,https://www.youtube.com/watch?v="$id >> yturl
@@ -23,12 +23,12 @@ set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "三立新聞,https://www.youtube.com/watch?v="$id >> yturl
 
-set key = "TVBS新聞直播"
+set key = "TVBS NEWS"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "TVBS新聞,https://www.youtube.com/watch?v="$id >> yturl
 
-set key = "台視新聞台HD 24 小時線上直播"
+set key = "台視新聞台HD 24"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "台視新聞,https://www.youtube.com/watch?v="$id >> yturl
@@ -39,7 +39,7 @@ echo $id
 echo "中視新聞,https://www.youtube.com/watch?v="$id >> yturl
 
 
-set key = "東森財經新聞24小時"
+set key = "EBC 東森財經新聞24小時"
 set id = `yt-dlp "ytsearch:$key"  --get-id`
 echo $id
 echo "東森財經,https://www.youtube.com/watch?v="$id >> yturl
